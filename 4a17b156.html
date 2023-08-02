@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<meta name="baidu-site-verification" content="codeva-kpHFjCjpPA" />
   <head>
   <meta charset="UTF-8">
   <meta 
@@ -28,7 +29,7 @@
     
       <meta 
         property="og:url" 
-        content="http://example.com/2023/08/01/hello-world/index.html">
+        content="http://example.com/4a17b156.html">
     
     
       <meta 
@@ -45,7 +46,7 @@
         content="2023-08-01">
       <meta 
         property="og:article:modified_time" 
-        content="2023-08-01">
+        content="2023-08-02">
       <meta 
         property="og:article:author" 
         content="Clarlotte">
@@ -162,6 +163,9 @@
   
   
   
+  
+    
+    <link rel="prefetch" href="//unpkg.com/valine/dist/Valine.min.js" as="script">
   
   
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -428,8 +432,8 @@
           <span style="font-weight: bold;">文章链接：</span><a 
             target="_blank" 
             rel="nofollow noopener noreferrer" 
-            href="http://example.com/2023/08/01/hello-world/">
-            http://example.com/2023/08/01/hello-world/
+            href="http://example.com/4a17b156.html">
+            http://example.com/4a17b156.html
           </a>
         </p>
         <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
@@ -441,6 +445,50 @@
   
   
 </div>
+
+  <div 
+    class="card card-content comment-card" 
+    style="margin-top: 16px;">
+    <div class="comment-card-title">评论</div>
+    
+  <div id="vcomments"></div>
+  
+  <script>
+    loadScript("//unpkg.com/valine/dist/Valine.min.js");
+    var oldLoadVa = window.onload;
+    window.onload = function () {
+      oldLoadVa && oldLoadVa();
+      new Valine({
+        el: '#vcomments',
+        appId: 'NQYi9VeETfslv2iZqcnLHywC-gzGzoHsz',
+        appKey: 'k1fIyg4kQw5IqJBobNmx36jz',
+        placeholder: 'Just go go',
+        path: window.location.pathname,
+        avatar: 'monsterid',
+        meta: ["nick","mail"],
+        pageSize: '10',
+        lang: '',
+        visitor: 'false',
+        highlight: true,
+        recordIP: false,
+        
+        
+        
+        enableQQ: 'false',
+        requiredFields: ["nick"],
+      });
+    };
+  </script>
+  <script type="text/javascript">
+    fetch('https://v1.hitokoto.cn/?c=d&c=j')
+            .then(response => response.json())
+            .then(data => {
+              document.getElementById("veditor").setAttribute("placeholder",data.hitokoto+"__"+data.from);
+            })
+            .catch(console.error)
+  </script>
+
+  </div>
 
 <div 
   class="card card-content toc-card" 
@@ -481,7 +529,7 @@
     
       <div class="recent-posts-item">
         <div class="recent-posts-item-title">2023-08-01</div>
-        <a href="/2023/08/01/hello-world/"><div class="recent-posts-item-content">Hello World</div></a>
+        <a href="/4a17b156.html"><div class="recent-posts-item-content">Hello World</div></a>
       </div>
     
   </div>
@@ -503,11 +551,8 @@
         <span>
           Copyright ©
           
-            2020
+            2023
           
-          
-                - 
-                2023
           
         </span>
         &nbsp;
@@ -549,6 +594,19 @@
     
     
     
+      <div class="footer-dsc">
+        
+          本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        
+        
+          <span>&nbsp;|&nbsp;</span>
+        
+        
+          本站总访客数<span id="busuanzi_value_site_uv"></span>次
+        
+      </div>
+      
+    
 </footer>
  
     
@@ -589,7 +647,7 @@
   <i class="iconfont icon-search button-icon"></i>
 </a> 
      
-     
+    
      
       <script>
   var addImgLayout = function () {
@@ -623,6 +681,10 @@
      
      
     <script src="/js/main.js"></script> 
+    
+      <script> 
+        loadScript('/js/lib/busuanzi.min.js') 
+      </script>
      
     
       <script>
